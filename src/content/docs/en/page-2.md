@@ -1,50 +1,41 @@
 ---
-title: "Page 2"
-description: "Lorem ipsum dolor sit amet - 2"
+title: "Escenario de Firewall"
+description: "Verificación de configuración del firewall"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+# Firewall : UFW
 
-Sed flavum. Stridore nato, Alcandrumque desint ostendit derat, longoque, eadem
-iunxit miserum pedum pectora. Liberat sine pignus cupit, ferit mihi venias
-amores, et quod, maduere haec _gravi_ contentusque heros. Qui suae attonitas.
+Hicimos uso del firewall Uncomplicated Firewall (UFW) para en los dropplets de Digital Ocean. Los comandos de instalación son los siguientes:
 
-_Acta caelo_ ego, hoc illi ferroque, qui fluitque Achillis deiecerat erat
-inhospita arasque ad sume et aquis summo. Fugerat ipse iam. Funeris Iuno Danaos
-est inroravere aurum foret nati aeque tetigisset! Esse ad tibi queritur [Sol sub
-est](http://iusserat.net/) pugno solitoque movet coercuit solent caput te?
+``` bash
+apt install ufw 
+```
 
-Crescit sint petit gemellos gemino, et _gemma deus sub_ Surrentino frena
-principiis statione. Soporiferam secunda nulli Tereus is _Aeolidae cepit_, tua
-peregrinosque illam parvis, deerit sub et times sedant.
+Una vez instalado se tienen que crear reglas con los siguientes comandos
 
-## Apium haec candida mea movebo obsuntque descendat
+1. Evitar hacernos lockout del host
 
-Furti lucos cum iussa quid temptanti gravitate animus: vocat
-[ira](http://rediere.com/): illa. Primis aeternus, illi cinguntur ad mugitus
-aevo repentinos nec.
+   ```bash
+    ufw allow 22/tcp
+   ```
 
-Transcurrere tenens in _litore_ tuti plebe circumspicit viventi quoque mox
-troades medio mea locuta gradus perque sic unguibus
-[gramen](http://quantoque.io/). Effetus celerique nomina quoque. Ire gemino est.
-Eurus quaerenti: et lacus, tibi ignorant tertia omnes subscribi ducentem sedit
-experientia sine ludunt multae. Ponderis memor purasque, ut armenta corpora
-efferre: praeterea infantem in virgam verso.
+2. Permitir trafico HTTP y HTTPS en los puertos 80 y 443 respectivamente
 
-- Revellit quoniam vulnerat dique respicit
-- Modo illis
-- Nec victoria quodque
-- Spectans si vitis iussorum corpora quas
+    ``` bash
+    ufw allow 80/tcp
+    ```
 
-Tibi igni, iamque, sum arsuro patet et Talibus cecidere: levati Atlas villosa
-dubium conparentis litem volentem nec? Iuga tenent, passi cumque generosior
-luminis, quique mea aequora ingens bracchia furor, respiramen eram: in. Caelebs
-et passu Phaethonta alumna orbem rapuit inplet [adfusaeque
-oculis](http://www.virum.net/ille-miserae.html) paene. Casus mea cingebant idque
-suis nymphe ut arae potuit et non, inmota erat foret, facta manu arvum.
+    ``` bash
+    ufw allow 443/tcp
+    ```
 
-Fugam nec stridentemque undis te solet mentemque Phrygibus fulvae adhuc quam
-cernimus est! Aper iube dederat adsere iamque mortale ita cornua si fundamina
-quem caperet, iubeas stolidae pedesque intrarunt navigat triformis. Undas terque
-digitos satis in nautae sternuntur curam, iaculum ignoscere _pianda dominique
-nostra_ vivacemque teneraque!
+Una vez hecho esto se puede habilitar el firewall y verificar el status del mismo
+
+    ``` bash
+        ufw enable
+    ```
+Al dar ``` ufw enable ``` aparece un prompt de advertencia al cual le podremos dar Y para habilitar
+
+    ``` bash
+        ufw status
+    ```

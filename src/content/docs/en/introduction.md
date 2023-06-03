@@ -1,25 +1,22 @@
 ---
-title: "Introduction"
-description: "Docs intro"
+title: "Proyecto de VPN Site to Site"
+description: "Reporte del proyecto"
 ---
 
 **Welcome to Astro!**
 
-This is the `docs` starter template. It contains all of the features that you need to build a Markdown-powered documentation site, including:
+Reporte del equipo de VPN para la clase de Administración y Seguridad de Redes
 
-- ✅ **Full Markdown support**
-- ✅ **Responsive mobile-friendly design**
-- ✅ **Sidebar navigation**
-- ✅ **Search (powered by Algolia)**
-- ✅ **Multi-language i18n**
-- ✅ **Automatic table of contents**
-- ✅ **Automatic list of contributors**
-- ✅ (and, best of all) **dark mode**
+- Mostrar funcionalidad de escenario de servidores para cada red LAN1/LAN2. Verificar operación de los servicios desde máquinas virtuales definidas en LAN1/LAN2. 
+- Se deberá acceder a los equipos del escenario construido (ping y servicios Web, todo por IP).
+- Instalar 2 instancias de pfSense con dos adaptadores de red  LAN1/WAN1.Incluir solo reglas básicas de Internet.
+- Instalar y que quede en operación el servicio de OpenVPN en pfSense.
+- Conexión con al menos dos ambientes operativos.
+Mostrar referencias bibliográficas y de Internet.
+
 
 ## Getting Started
 
-To get started with this theme, check out the `README.md` in your new project directory. It provides documentation on how to use and customize this template for your own project. Keep the README around so that you can always refer back to it as you build.
-
-Found a missing feature that you can't live without? Please suggest it [on our Discord](https://astro.build/chat) and even consider adding it yourself on GitHub! Astro is an open source project and contributions from developers like you are how we grow!
+Hola Profe
 
 Good luck out there, Astronaut. 🧑‍🚀

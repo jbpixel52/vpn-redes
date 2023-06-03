@@ -1,5 +1,5 @@
 export const SITE = {
-	title: 'Documentation',
+	title: 'Reporte de VPN Site to Site',
 	description: 'Your website description.',
 	defaultLanguage: 'en-us',
 } as const;
@@ -38,9 +38,9 @@ export const SIDEBAR: Sidebar = {
 	en: {
 		'Section Header': [
 			{ text: 'Introduction', link: 'en/introduction' },
-			{ text: 'Page 2', link: 'en/page-2' },
-			{ text: 'Page 3', link: 'en/page-3' },
+			{ text: 'Escenario de Firewall', link: 'en/page-2' },
+			{ text: 'Escene', link: 'en/page-3' },
 		],
-		'Another Section': [{ text: 'Page 4', link: 'en/page-4' }],
+		'Extras': [{ text: 'Referencias', link: 'en/referencias' }],
 	},
 };
