@@ -21,21 +21,26 @@ Una vez instalado se tienen que crear reglas con los siguientes comandos
 
 2. Permitir trafico HTTP y HTTPS en los puertos 80 y 443 respectivamente
 
-    ``` bash
-    ufw allow 80/tcp
-    ```
+``` bash
+ufw allow 80/tcp
+```
 
-    ``` bash
-    ufw allow 443/tcp
-    ```
+``` bash
+ufw allow 443/tcp
+```
 
 Una vez hecho esto se puede habilitar el firewall y verificar el status del mismo
 
-    ``` bash
-        ufw enable
-    ```
+``` bash
+    ufw enable
+```
+
 Al dar ``` ufw enable ``` aparece un prompt de advertencia al cual le podremos dar Y para habilitar
 
-    ``` bash
-        ufw status
-    ```
+``` bash
+    ufw status
+```
+
+## Llamada de NTP
+
+```
