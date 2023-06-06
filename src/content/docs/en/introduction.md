@@ -3,7 +3,7 @@ title: "Proyecto de VPN Site to Site"
 description: "Reporte del proyecto"
 ---
 
-**Welcome to Astro!**
+**Reporte**
 
 Reporte del equipo de VPN para la clase de Administración y Seguridad de Redes
 
