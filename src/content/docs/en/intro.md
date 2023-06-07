@@ -9,7 +9,7 @@ El siguiente reporte detalla como se hizo el VPN Server para el proyecto de Admi
 
 ### Generar Escenarios
 
-- Instalación del servicio Debia
+- Instalación del servicio Debian
 - Reglas de firewall establecidas
 
 ### Hacer los servidores
@@ -20,4 +20,6 @@ El siguiente reporte detalla como se hizo el VPN Server para el proyecto de Admi
 - Instalación del servicio en pfSense de VPN site-to-site usando IPSec -LAN2/WAN2
 - Comprobaciones
 
-Y sin mas preambulo, procedemos a la primera parte del documento
+Y sin mas preambulo, procedemos a la primera parte del documento, dejandole una pequeña sorpresa para hacer mas ameno el recorrido:
+
+![Best Girl](/doriangray.jpg)
