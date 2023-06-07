@@ -36,10 +36,13 @@ export type Sidebar = Record<
 >;
 export const SIDEBAR: Sidebar = {
 	en: {
-		'Section Header': [
-			{ text: 'Introduction', link: 'en/introduction' },
-			{ text: 'Escenario de Firewall', link: 'en/page-2' },
-			{ text: 'Escene', link: 'en/page-3' },
+		'Secciones': [
+			{ text: 'Introducción', link: 'en/intro' },
+			{ text: 'Firewall', link: 'en/firewall' },
+			{ text: 'Server de Debian', link: 'en/debian' },
+			{ text: 'PFSense Site-to-Site', link: 'en/pfsense-site-to-site' },
+			{ text: 'OPENVPN Debian', link: 'en/openvpn-debian' },
+			{ text: 'Comprobaciones', link: 'en/comprobaciones' },
 		],
 		'Extras': [{ text: 'Referencias', link: 'en/referencias' }],
 	},
