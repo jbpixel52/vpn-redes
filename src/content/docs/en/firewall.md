@@ -13,13 +13,13 @@ apt install ufw
 
 Una vez instalado se tienen que crear reglas con los siguientes comandos
 
-1. Evitar hacernos lockout del host
+Evitar hacernos lockout del host
 
-   ```bash
-    ufw allow 22/tcp
-   ```
+```bash
+ufw allow 22/tcp
+```
 
-2. Permitir trafico HTTP y HTTPS en los puertos 80 y 443 respectivamente
+Permitir trafico HTTP y HTTPS en los puertos 80 y 443 respectivamente
 
 ``` bash
 ufw allow 80/tcp
@@ -35,7 +35,7 @@ Una vez hecho esto se puede habilitar el firewall y verificar el status del mism
     ufw enable
 ```
 
-Al dar ``` ufw enable ``` aparece un prompt de advertencia al cual le podremos dar Y para habilitar
+Al dar `ufw enable` aparece un prompt de advertencia al cual le podremos dar Y para habilitar
 
 ``` bash
     ufw status
@@ -43,4 +43,4 @@ Al dar ``` ufw enable ``` aparece un prompt de advertencia al cual le podremos d
 
 ## Llamada de NTP
 
-```
+``` ntpdate -q pool.ntp.org ```

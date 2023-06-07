@@ -1,14 +1,11 @@
 ---
-title: "Referencias y Literatura"
-description: "Muestra de referencias bibliográficas y de Internet."
+title: "Comprobaciones"
+description: "Distintas comprobaciones de funcionamiento del servidor"
 ---
 
-https://help.ubuntu.com/community/UFW
+### Comprobaciones
 
-https://tecadmin.net/connect-openvpn-client-on-debian/
-
-https://github.com/withastro/astro/tree/main/examples/docs
-
-https://www.cyberciti.biz/faq/ufw-allow-incoming-ssh-connections-from-a-specific-ip-address-subnet-on-ubuntu-debian/
-
-https://www.youtube.com/watch?v=LvD5N31ubdM&pp=ygUwb3BlbnZwbiBjb25uZWN0IHR3byBjbGllbnRzIG9uIGRpZmZlcmVudCBzdWJuZXRz
+- Verificar que todo usuario conectado LAN1 pueda acceder a la red remota LAN2 y viceversa. Verificar operación de los servicios desde máquinas virtuales definidas en LAN1 a LAN2 y viceversa.
+- Funciona en Android, IOS, Mac, PC Windows y PC Linux.
+- Regla de Firewall en LAN1/LAN2 para servicio SNMP en pfsense y OPNsense.
+- Pruebas varias
